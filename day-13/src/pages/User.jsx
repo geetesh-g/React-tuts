@@ -1,5 +1,6 @@
 import React, { useEffect, useReducer } from "react";
 import reducer from "../components/reducer";
+import UserCard from "../components/UserCard";
 const initialState = { isLoading: false, isError: false, data: null };
 
 const getData = async (dispatch) => {
@@ -30,7 +31,7 @@ function User() {
 			) : state.data?.length <= 0 ? (
 				<h1>List is empty</h1>
 			) : (
-				state.data?.map((item) => <h3 key={item.id}>{item.first_name}</h3>)
+				state.data?.map((item) => <UserCard key={item.id} {...item} />)
 			)}
 		</div>
 	);

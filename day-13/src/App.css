@@ -8,3 +8,10 @@
 	border: 1px solid;
 	justify-content: space-around;
 }
+.navbar a {
+	text-decoration: none;
+	font: 1em sans-serif;
+	padding: 6px;
+	border: 1px solid;
+	border-radius: 6px;
+}
