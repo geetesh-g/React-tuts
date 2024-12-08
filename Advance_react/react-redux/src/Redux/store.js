@@ -1,9 +1,11 @@
-import { legacy_createStore } from "redux";
-import { reducer } from "./reducer";
+import { legacy_createStore, combineReducers } from "redux";
+import { reducer as CountReducer } from "./Counter/reducer";
+import { reducer as TodosReducer } from "./Todos/reducer";
+import { reducer as AuthReducer } from "./Auth/reducer";
+const rootReducer = combineReducers({
+	CountReducer,
+	TodosReducer,
+	AuthReducer,
+});
 
-const initState = {
-	counter: 0,
-	todos: [],
-};
-
-export const store = legacy_createStore(reducer, initState);
+export const store = legacy_createStore(rootReducer);

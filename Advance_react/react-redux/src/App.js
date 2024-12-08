@@ -1,11 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Counter from "./components/Counter";
+import AllRoutes from "./pages/AllRoutes";
+import { Auth } from "./pages/Auth";
+import Home from "./pages/Home";
 
 function App() {
 	return (
 		<div className="App">
-			<Counter />
+			<AllRoutes />
 		</div>
 	);
 }

@@ -1,0 +1,59 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "status": false
+    },
+    {
+      "id": "0f87",
+      "title": "Task-1",
+      "status": false
+    },
+    {
+      "id": "f1b3",
+      "title": "Task-2",
+      "status": false
+    },
+    {
+      "id": "c1c6",
+      "title": "Task-3",
+      "status": false
+    },
+    {
+      "id": "c6e4",
+      "title": "Task-4",
+      "status": false
+    },
+    {
+      "id": "3884",
+      "title": "Task-5",
+      "status": false
+    },
+    {
+      "id": "b27e",
+      "title": "Task-6",
+      "status": false
+    },
+    {
+      "id": "e0d1",
+      "title": "Task-7",
+      "status": false
+    },
+    {
+      "id": "9e95",
+      "title": "",
+      "status": false
+    },
+    {
+      "id": "4a03",
+      "title": "Task - 8",
+      "status": false
+    },
+    {
+      "id": "9b59",
+      "title": "Eat",
+      "status": false
+    }
+  ]
+}
