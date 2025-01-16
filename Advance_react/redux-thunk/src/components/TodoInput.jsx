@@ -1,9 +1,19 @@
-import { Box, Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
+import {
+	Box,
+	Heading,
+	Input,
+	InputGroup,
+	InputLeftElement,
+} from "@chakra-ui/react";
 import React, { useEffect, useRef } from "react";
-import { SearchIcon } from "@chakra-ui/icons";
+import { AddIcon } from "@chakra-ui/icons";
+import { getTodos, addTodos } from "../Redux/Todo/action";
+import { useDispatch } from "react-redux";
 
-function TodoInput({ handlePost }) {
+function TodoInput() {
 	const ref = useRef(null);
+	const dispatch = useDispatch();
+
 	useEffect(() => {
 		ref.current.focus();
 	}, []);
@@ -13,15 +23,16 @@ function TodoInput({ handlePost }) {
 			title: ref.current.value,
 			status: false,
 		};
-		handlePost(todo);
+		dispatch(addTodos(todo)).then(() => dispatch(getTodos));
 		ref.current.value = "";
 	};
 
 	return (
 		<Box maxWidth="400px" mx="auto" mt="20px">
+			<Heading my={10}>Add Todo</Heading>
 			<InputGroup>
 				<InputLeftElement cursor={"pointer"} onClick={handleClick}>
-					<SearchIcon color="gray.500" />
+					<AddIcon color={"gray.500"} />
 				</InputLeftElement>
 				<Input
 					placeholder="Enter Todo..."

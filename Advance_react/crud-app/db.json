@@ -1,0 +1,124 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"title": "Sport Shoes",
+			"price": 109.95,
+			"brand": "adidas",
+			"category": "men",
+			"image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/i/6/t/-original-imah4a9fqrrpf6np.jpeg?q=70",
+			"rating": {
+				"rate": 3.9,
+				"count": 120
+			}
+		},
+		{
+			"id": 2,
+			"title": "Sport Shoes",
+			"price": 22.3,
+			"brand": "adidas",
+			"category": "men",
+			"image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/w/v/6/11-ew2566-11-adidas-white-original-imagyyyn7rhx8hrg.jpeg?q=70",
+			"rating": {
+				"rate": 4.1,
+				"count": 259
+			}
+		},
+		{
+			"id": 3,
+			"title": "Mens Cotton Jacket",
+			"price": 55.99,
+			"brand": "Linaria",
+			"category": "men",
+			"image": "https://rukminim2.flixcart.com/image/612/612/xif0q/jacket/3/o/5/xl-no-920-denim-bj-25-metronaut-original-imah7e5fyyf5tvhk.jpeg?q=70",
+			"rating": {
+				"rate": 4.7,
+				"count": 500
+			}
+		},
+		{
+			"id": 4,
+			"title": "Mens Casual Slim Fit",
+			"price": 15.99,
+			"brand": "Hanes",
+			"category": "men",
+			"image": "https://rukminim2.flixcart.com/image/612/612/xif0q/jacket/4/n/d/xxl-1-no-jkt1-vebnor-original-imah7fagxb4epvzp.jpeg?q=70",
+			"rating": {
+				"rate": 2.1,
+				"count": 430
+			}
+		},
+		{
+			"id": 5,
+			"title": "Men's T-shirt",
+			"price": 695,
+			"brand": "Allen Solly",
+			"category": "kids",
+			"image": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/m/o/l-fmt241-pogofs-p-force-original-imah2tp3fbcmt5wb.jpeg?q=70",
+			"rating": {
+				"rate": 4.6,
+				"count": 400
+			}
+		},
+		{
+			"id": 6,
+			"title": "Men's T-shirt",
+			"price": 168,
+			"brand": "Peter England",
+			"category": "kids",
+			"image": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/1/3/g/l-men-s-solid-round-neck-white-t-shirt-metronaut-original-imagytfbnrmzhjsc.jpeg?q=70",
+			"rating": {
+				"rate": 3.9,
+				"count": 70
+			}
+		},
+		{
+			"id": 7,
+			"title": "Women T'sirts",
+			"price": 9.99,
+			"brand": "Allen Solly",
+			"category": "women",
+			"image": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/0/r/z/xl-casual-shoulder-sleeve-solid-women-black-white-top-eleven-original-imagyhd7rezc7ks7.jpeg?q=70",
+			"rating": {
+				"rate": 3,
+				"count": 400
+			}
+		},
+		{
+			"id": 8,
+			"title": "Women T'sirts",
+			"price": 10.99,
+			"brand": "Peter England",
+			"category": "women",
+			"image": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/v/g/o/l-fltd1-om-namah-india-original-imags3zuqqnj3a2e.jpeg?q=70",
+			"rating": {
+				"rate": 1.9,
+				"count": 100
+			}
+		},
+		{
+			"id": 9,
+			"title": "Mobile",
+			"price": 12000,
+			"brand": "Nothing",
+			"category": "men",
+			"image": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/o/2/-original-imah3ajbyffs6hee.jpeg?q=70",
+			"rating": {
+				"rate": 3.3,
+				"count": 203
+			}
+		},
+		{
+			"id": 10,
+			"title": "Mobile",
+			"price": 79000,
+			"brand": "Iphone",
+			"category": "men",
+			"image": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/q/n/s/-original-imah4jyfrgsbebg9.jpeg?q=70",
+			"rating": {
+				"rate": 2.9,
+				"count": 470
+			}
+		}
+	]
+}

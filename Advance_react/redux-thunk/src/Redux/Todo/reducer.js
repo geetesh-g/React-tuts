@@ -20,7 +20,7 @@ export const reducer = (state = initState, { type, payload }) => {
 		case GET_TODO_SUCCESS:
 			return { ...state, isLoading: false, todos: payload };
 		case POST_TODO_SUCCESS:
-			return { ...state, isLoading: false, todos: [...state.todos, payload] };
+			return { ...state, isLoading: false };
 		default:
 			return { ...state };
 	}
