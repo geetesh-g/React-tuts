@@ -158,7 +158,7 @@ export default function Admin() {
 						<Select
 							placeholder="Select category"
 							name="category"
-							value={product.category}
+							value={product?.category}
 							onChange={handleChange}
 							focusBorderColor="blue.500"
 							bg="gray.50"

@@ -25,6 +25,8 @@ export const ProductList = () => {
 	const paramObj = {
 		params: {
 			category: searchParams.getAll("category"),
+			_sort: searchParams.get("order") && "price",
+			_order: searchParams.get("order"),
 		},
 	};
 

@@ -2,8 +2,11 @@ import { HStack, Text, IconButton } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import { QuestionIcon } from "@chakra-ui/icons";
 import { CartIcon } from "./cartIcon"; // Ensure this is the correct path to your CartIcon component
+import { useSelector } from "react-redux";
 
 export default function Navbar() {
+	const cartCount = useSelector((store) => store.cartReducer.cartCount);
+	// console.log(cartCount);
 	return (
 		<HStack
 			py={3}
@@ -45,7 +48,7 @@ export default function Navbar() {
 
 			{/* Action Icons */}
 			<HStack spacing={4}>
-				<CartIcon itemCount={0} />
+				<CartIcon itemCount={cartCount} />
 				<IconButton
 					icon={<QuestionIcon />}
 					aria-label="Help"

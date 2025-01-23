@@ -6,8 +6,9 @@ import {
 } from "../Redux/authReducer/action";
 
 export const login = (data) => (dispatch) => {
+	console.log(data);
 	dispatch(loginRequest());
-	axios
+	return axios
 		.post("https://reqres.in/api/login", data)
 		.then((res) => {
 			dispatch(loginSuccess(res.data.token));

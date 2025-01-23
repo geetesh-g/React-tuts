@@ -10,8 +10,15 @@ import {
 	ButtonGroup,
 	Divider,
 } from "@chakra-ui/react";
+import { Navigate, useNavigate } from "react-router-dom";
+import { addToCart } from "../Redux/cartReducer/action";
+import { useDispatch } from "react-redux";
 
-export const ProductCard = ({ image, price, title, brand }) => {
+export const ProductCard = (item) => {
+	const { image, price, title, brand, id } = item;
+	const dispatch = useDispatch();
+	const navigate = useNavigate();
+
 	return (
 		<Card
 			maxW="sm"
@@ -20,7 +27,7 @@ export const ProductCard = ({ image, price, title, brand }) => {
 			boxShadow="sm"
 			_hover={{ boxShadow: "lg", transform: "scale(1.02)", transition: "0.2s" }}
 		>
-			<CardBody p={1}>
+			<CardBody p={2}>
 				<Image
 					src={image}
 					alt={title}
@@ -59,9 +66,23 @@ export const ProductCard = ({ image, price, title, brand }) => {
 						colorScheme="blue"
 						size="sm"
 						_hover={{ bg: "blue.50" }}
+						onClick={() => {
+							dispatch(addToCart(item));
+						}}
 					>
 						Add to Cart
 					</Button>
+					{/* <Button
+						variant="outline"
+						colorScheme="blue"
+						size="sm"
+						_hover={{ bg: "blue.50" }}
+						onClick={() => {
+							navigate(`/edit/${id}`);
+						}}
+					>
+						Edit
+					</Button> */}
 				</ButtonGroup>
 			</CardFooter>
 		</Card>

@@ -14,6 +14,7 @@ import {
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../utils/login";
+import { Navigate, replace, useLocation, useNavigate } from "react-router-dom";
 
 export default function Login() {
 	const [email, setEmail] = useState("");
@@ -21,6 +22,8 @@ export default function Login() {
 	const dispatch = useDispatch();
 	const auth = useSelector((store) => store.authReducer.auth);
 	const ref = useRef();
+	const location = useLocation();
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		ref.current.focus();
@@ -32,7 +35,9 @@ export default function Login() {
 			email,
 			password,
 		};
-		dispatch(login(userData));
+		dispatch(login(userData)).then(() => {
+			navigate(location.state ? location.state : "/", { replace: true });
+		});
 		setEmail("");
 		setPassword("");
 	};

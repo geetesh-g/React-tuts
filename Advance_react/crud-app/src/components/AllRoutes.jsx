@@ -6,6 +6,8 @@ import Login from "../Pages/Login";
 import Admin from "../Pages/Admin";
 import PrivateRoute from "./privateRoute";
 import { Box } from "@chakra-ui/react";
+import Edit from "../Pages/Edit";
+import { Cart } from "../Pages/Cart";
 
 export default function AllRoutes() {
 	return (
@@ -20,6 +22,15 @@ export default function AllRoutes() {
 					element={
 						<PrivateRoute>
 							<Admin />
+						</PrivateRoute>
+					}
+				/>
+				<Route path="/cart" element={<Cart />} />
+				<Route
+					path="/edit/:id"
+					element={
+						<PrivateRoute>
+							<Edit />
 						</PrivateRoute>
 					}
 				/>

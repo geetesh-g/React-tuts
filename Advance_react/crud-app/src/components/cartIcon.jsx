@@ -1,10 +1,18 @@
 import React from "react";
 import { Box, Icon, Text } from "@chakra-ui/react";
 import { FaShoppingCart } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export const CartIcon = ({ itemCount = 0 }) => {
+	const navigate = useNavigate();
 	return (
-		<Box position="relative" display="inline-block">
+		<Box
+			position="relative"
+			display="inline-block"
+			onClick={() => {
+				navigate("/cart");
+			}}
+		>
 			{/* Cart Icon */}
 			<Icon
 				as={FaShoppingCart}
